@@ -717,9 +717,9 @@ DLLEXPORT void init_clang_instance(C) {
     Cxx->CI->getLangOpts().RTTIData = 0;
     Cxx->CI->getLangOpts().ImplicitInt = 0;
     // Exceptions
-    // Cxx->CI->getLangOpts().Exceptions = 1;          // exception handling 
-    // Cxx->CI->getLangOpts().ObjCExceptions = 1;  //  Objective-C exceptions 
-    // Cxx->CI->getLangOpts().CXXExceptions = 1;   // C++ exceptions 
+    Cxx->CI->getLangOpts().Exceptions = 1;          // exception handling 
+    Cxx->CI->getLangOpts().ObjCExceptions = 1;  //  Objective-C exceptions 
+    Cxx->CI->getLangOpts().CXXExceptions = 1;   // C++ exceptions 
 
     // TODO: Decide how we want to handle this
     // clang_compiler->getLangOpts().AccessControl = 0;
